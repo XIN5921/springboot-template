@@ -1,0 +1,20 @@
+application:
+  yml:
+server:
+  port: 8083
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: week03 测试环境
+
+app:
+  app-name: 企业后台管理系统
+  version: 1.0.0
+  description: 基于SpringBoot3.5.1构成
+  published: false
+  author:
+    name: zhangxin
+    webiste: https://zhangxin
+    email: 3389747021@qq.com

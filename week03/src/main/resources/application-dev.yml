@@ -1,0 +1,38 @@
+application:
+  yml:
+server:
+  port: 8085
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: week03 开发环境
+
+app:
+  app-name: 企业后台管理系统
+  version: 1.0.0
+  description: 基于SpringBoot3.5.1构成
+  published: false
+  author:
+    name: zhangxin
+    webiste: https://zhangxin
+    email: 3389747021@qq.com
+
+# 阿⾥云短信配置（短信认证服务-个⼈免资质）
+aliyun:
+  sms:
+  # 是否启⽤短信服务
+  enabled: true
+  # 服务端点配置
+  endpoint: dypnsapi.aliyuncs.com
+  region-id: cn-hangzhou
+  # 敏感信息：建议⽤环境变量覆盖，不写死在配置中
+  access-key-id: 你的AccessKey ID
+  access-key-secret: 你的AccessKey Secret
+  # 赠送签名（⻅1.3赠送签名配置）
+  sign-name: "速通互联验证码"
+  #赠送模板CODE（⻅1.4赠送模板配置）
+  template-code: "100001"
+  #⽅案名称，可选，不填为默认⽅案
+  scheme-name:
