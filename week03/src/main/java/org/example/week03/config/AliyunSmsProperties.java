@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 @ConfigurationProperties(prefix = "aliyun.sms")
-public class ALiyunSmsProperties {
+public class AliyunSmsProperties {
     /**
      * 是否启用短信服务
      */
