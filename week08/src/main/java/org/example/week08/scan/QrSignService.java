@@ -33,7 +33,7 @@ public class QrSignService {
         redisTemplate.opsForValue().set(SignConstant.SIGN_CODE_KEY + signCode, activityId, SignConstant.EXPIRE_MIN, TimeUnit.MINUTES);
 
         // 3. 扫码地址：改成你自己的服务器公网/内网地址
-        String scanUrl = "http://10.22.28.65:8080/sign/scan?code=" + signCode;
+        String scanUrl = "http://10.40.25.24:8080/sign/scan?code=" + signCode;
 
         // 4. Hutool 生成二维码转base64
         byte[] bytes = QrCodeUtil.generatePng(scanUrl, 300, 300);
